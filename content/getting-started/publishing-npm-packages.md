@@ -25,6 +25,10 @@ Also make sure there isn't already a package with the same name, owned by somebo
 
 Test: Go to `https://npmjs.com/package/<package>`. You should see the information for your new package.
 
+## Public vs. private packages
+
+An unscoped package can only be public, so any package you publish without a scope will be public. Scoped packages can be public or private, and are private by default. See [working with scopes](/getting-started/scoped-packages) for more information.
+
 ## Updating the package
 
 When you make changes, you can update the package using `npm version <update_type>`, where update_type is one of the semantic versioning release types, patch, minor, or major. This command will change the version number in `package.json`. Note that this will also add a tag with this release number to your git repository if you have one.
